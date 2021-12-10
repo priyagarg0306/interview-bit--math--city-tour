@@ -53,6 +53,7 @@ All possible ways to visit remaining cities are :
 #define mod 1000000007
 
 ll power(ll x,ll y){
+
     ll res=1; 
     while(y){
         if(y&1) res = (res*x)%mod; 
@@ -63,6 +64,7 @@ ll power(ll x,ll y){
 }
 
 int Solution::solve(int A, vector<int> &B) {
+    
     sort(B.begin(),B.end()); 
     vector<int>un_vis; 
     int i=1;
